@@ -1,0 +1,51 @@
+{
+  "name": "mansaapi",
+  "version": "0.1.0",
+  "description": "Official Node.js SDK for Mansa API — African market data, bank codes, location, and identity.",
+  "keywords": [
+    "africa",
+    "african",
+    "stock market",
+    "bank codes",
+    "nigeria",
+    "ngx",
+    "fintech",
+    "api",
+    "sdk",
+    "mansaapi"
+  ],
+  "homepage": "https://mansaapi.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HeyZod/mansaapi-node.git"
+  },
+  "license": "MIT",
+  "author": "Pulsar Labs",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+    "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.4.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
