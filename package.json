@@ -20,7 +20,7 @@
     "url": "https://github.com/HeyZod/mansaapi-node.git"
   },
   "license": "MIT",
-  "author": "Pulsar Labs",
+  "author": "Mansa Labs",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
