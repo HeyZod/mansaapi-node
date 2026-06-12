@@ -340,12 +340,14 @@ export class MarketsResource {
   async getMovers(
     exchangeCode: string,
     params?: { limit?: number; type?: "gainers" | "losers" | "both" }
-  ): Promise<{ data: Mover[] }> {
+  ): Promise<{ data: { gainers: Mover[]; losers: Mover[] } }> {
     return this.http.get(`/api/v1/markets/exchanges/${exchangeCode}/movers`, params);
   }
 
   /** Pan-African top movers across all live exchanges. */
-  async getPanAfricanMovers(params?: { limit?: number }): Promise<{ data: Mover[] }> {
+  async getPanAfricanMovers(
+    params?: { limit?: number }
+  ): Promise<{ data: { gainers: Mover[]; losers: Mover[] } }> {
     return this.http.get("/api/v1/markets/movers/pan-african", params);
   }
 
