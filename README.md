@@ -2,6 +2,17 @@
 
 Official Node.js SDK for [Mansa API](https://mansaapi.com) — African market data, bank codes, location, and financial identity in one clean REST layer.
 
+**New (July 2026): the pan-African licensed-bank registry.** 293 institutions across
+22 countries — including every credit institution licensed by the BCEAO (8 WAEMU
+countries, official register) and all COBAC-supervised banks (6 CEMAC countries,
+national registers) with verified SWIFT/BIC codes. Registry countries require a
+[paid-tier key](https://mansaapi.com/pricing); the 8 core countries stay on the free tier.
+
+```ts
+// Every licensed bank in Senegal — BCEAO licence numbers + verified SWIFT codes
+const banks = await mansa.identity.getBanks({ country: "SN" }); // starter tier+
+```
+
 [![npm version](https://img.shields.io/npm/v/mansaapi.svg)](https://www.npmjs.com/package/mansaapi)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 

@@ -1,7 +1,7 @@
 {
   "name": "mansaapi",
-  "version": "0.1.1",
-  "description": "Official Node.js SDK for Mansa API — African market data, bank codes, location, and identity.",
+  "version": "0.2.0",
+  "description": "Official Node.js SDK for Mansa API \u2014 African market data, the 22-country licensed-bank registry (BCEAO/COBAC, verified SWIFT codes), currencies, mobile networks, holidays and identity.",
   "keywords": [
     "africa",
     "african",
@@ -12,7 +12,12 @@
     "fintech",
     "api",
     "sdk",
-    "mansaapi"
+    "mansaapi",
+    "bank-registry",
+    "swift-codes",
+    "waemu",
+    "cemac",
+    "bceao"
   ],
   "homepage": "https://mansaapi.com",
   "repository": {
